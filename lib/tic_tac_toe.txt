@@ -1,0 +1,18 @@
+A board will be stored as a single dimensional array with nine element.
+Each those will be a string value.
+Each element index (0-8) will represent a position.
+String value will always X and O or null .
+
+
+class Board{
+const List<String> WIN_Pattern = const [
+   const[0,1,2],
+   const[3,4,5],
+];
+
+List<String> board;
+int movement = 0;
+
+Board(){
+board = new List<String>.filled(9,null);
+}
